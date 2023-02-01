@@ -1,0 +1,33 @@
+div#timeline1 {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  display: block;
+}
+
+div#seekObj1 {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 10%;
+}
+
+.play-pause {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6698880235688025) 0%,
+    rgba(0, 0, 0, 0.2497199563419118) 50%,
+    rgba(0, 0, 0, 0.7035014689469538) 100%
+  );
+}
+.play-pause img {
+  width: 80px;
+  height: 80px;
+}

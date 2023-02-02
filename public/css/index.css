@@ -259,7 +259,7 @@ footer {
   }
   #box-left,
   #box-right {
-    width: 20px;
+    min-width: 10px;
   }
   #box-right {
     font-size: 1.5rem;

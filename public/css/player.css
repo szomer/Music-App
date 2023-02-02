@@ -1,14 +1,22 @@
 div#timeline1 {
   width: 100%;
-  background: rgb(255, 255, 255);
   display: block;
+
+  background: rgb(195, 34, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(246, 43, 118, 1) 0%,
+    rgba(81, 0, 255, 1) 100%
+  );
+  box-shadow: 0px 0px 20px black;
 }
 
 div#seekObj1 {
   width: 20px;
   height: 20px;
-  background: #000;
-  border-radius: 10%;
+
+  background: rgba(0, 0, 0, 0.853);
+  border-radius: 15%;
 }
 
 .play-pause {
@@ -19,15 +27,32 @@ div#seekObj1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(0, 0, 0);
+
+  background: rgb(0, 0, 0, 0.3);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.6698880235688025) 0%,
-    rgba(0, 0, 0, 0.2497199563419118) 50%,
-    rgba(0, 0, 0, 0.7035014689469538) 100%
+    rgba(0, 0, 0, 0.825) 0%,
+    rgba(255, 0, 242, 0.07) 50%,
+    rgba(0, 0, 0, 0.825) 100%
   );
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
 }
+
+.play-pause:hover {
+  background: rgb(0, 0, 0, 0.2);
+}
+
 .play-pause img {
   width: 80px;
   height: 80px;
+  border-bottom-left-radius: 10px;
+}
+
+@media only screen and (max-width: 780px) {
+  .play-pause {
+    width: 220px;
+    height: 220px;
+    border-radius: 0px;
+  }
 }

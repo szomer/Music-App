@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 html,
 body {
   height: 100%;
@@ -5,7 +8,7 @@ body {
   scroll-behavior: smooth;
 }
 body {
-  min-width: 330px;
+  min-width: 340px;
   overflow: auto;
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -13,9 +16,26 @@ body {
   user-select: none; /* Standard */
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(68, 68, 68);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 main {
   min-height: 100%;
-  margin-bottom: -30px;
+  margin-bottom: -20px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -23,14 +43,18 @@ main {
   flex-wrap: nowrap;
   justify-content: center;
 
-  background-color: rgba(0, 255, 255, 0.473);
+  background-image: url("/public/img/bg.jpg");
 }
 
 footer {
-  height: 30px;
+  height: 20px;
   text-align: center;
-  line-height: 30px;
-  background-color: rgba(4, 0, 255, 0.473);
+  font-size: 0.8rem;
+  line-height: 20px;
+  background-color: rgba(22, 22, 22, 0.841);
+  color: rgb(122, 122, 122);
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 #player-wrapper,
@@ -48,9 +72,8 @@ footer {
 }
 
 #box-left,
-#box-right,
-#playing-wrapper {
-  background-color: rgba(255, 170, 0, 0.521);
+#box-right {
+  width: 50px;
 }
 
 /* Box - Left/Right */
@@ -61,6 +84,8 @@ footer {
   font-size: 2.5rem;
   text-align: center;
   font-weight: bold;
+  color: white;
+  font-family: "Chivo Mono", monospace;
 }
 
 /* Player - Playing */
@@ -68,11 +93,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#bar,
-#playing-content {
-  background-color: rgba(0, 145, 255, 0.508);
 }
 
 /* Player - Playing Content */
@@ -84,11 +104,9 @@ footer {
 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-}
-
-#playing-image,
-#playing-track {
-  background-color: rgba(247, 0, 255, 0.467);
+  background-color: rgba(22, 22, 22, 0.841);
+  box-shadow: 0px 0px 10px black;
+  color: rgb(255, 255, 255);
 }
 
 /* Player - Image */
@@ -96,7 +114,7 @@ footer {
   width: 300px;
   height: 300px;
 
-  background-image: url("/public/img/cover.jpg");
+  background-image: url("/public/img/track1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom-left-radius: 10px;
@@ -104,8 +122,8 @@ footer {
 
 /* Player - Track Info */
 #playing-track {
-  max-width: 350px;
-  min-width: 180px;
+  max-width: 360px;
+  min-width: 200px;
 
   display: flex;
   flex-direction: column;
@@ -113,23 +131,32 @@ footer {
   align-content: center;
   flex-wrap: nowrap;
   align-items: flex-end;
+  text-align: end;
 
   border-bottom-right-radius: 10px;
 }
 
 #playing-track div {
-  padding: 5px;
-  background-color: rgba(0, 255, 42, 0.562);
+  padding: 2px;
+  margin-left: 45px;
+  margin-right: 15px;
+  font-family: "Titillium Web", sans-serif;
 }
 
 /* Playing track components */
-#current-artist {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
 #current-title {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.566);
+}
+#current-artist {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+#current-line {
+  width: 70%;
+  height: 15px;
+  border-top: 1px solid rgb(73, 73, 73);
 }
 #current-album,
 #current-release {
@@ -138,53 +165,102 @@ footer {
 
 /* Playlist */
 #playlist-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
 
-  border-top: 10px solid black;
+  border-top: 15px solid rgb(66, 66, 66);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 /* Playlist - Songs */
 #song-wrapper {
-  max-height: 200px;
+  max-height: 320px;
   margin-left: 20px;
   margin-right: 20px;
   overflow-x: hidden;
   overflow-y: auto;
 
-  background-color: rgba(255, 238, 7, 0.448);
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  background-color: rgba(22, 22, 22, 0.841);
+  box-shadow: 0px 0px 20px black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .song {
-  margin: 15px;
+  margin: 0px 10px;
+  padding: 10px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  background-color: rgba(200, 0, 255, 0.393);
-  border-radius: 5px;
+  font-size: 1.1rem;
+  font-family: "Chivo Mono", monospace;
+  color: white;
+  border-bottom: 2px solid rgb(246, 43, 175, 0.9);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.51);
+}
+
+.song:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  cursor: pointer;
 }
 
 .song-component {
   padding: 10px;
-
-  background-color: rgba(0, 0, 255, 0.395);
+  color: rgb(217, 217, 217);
 }
 
-@media only screen and (min-width: 730px) {
+@media only screen and (min-width: 1200px) {
+  #art1 {
+    position: fixed;
+    top: 65%;
+    left: 2%;
+    z-index: 999;
+    width: 250px;
+    height: 250px;
+    background-image: url("/public/img/music2.gif");
+    background-repeat: no-repeat;
+    background-size: 250px;
+  }
+
+  #art2 {
+    position: fixed;
+    top: 20%;
+    left: 80%;
+    z-index: 999;
+    width: 300px;
+    height: 300px;
+    background-image: url("/public/img/music.gif");
+    background-repeat: no-repeat;
+    background-size: 300px;
+  }
+}
+
+@media only screen and (min-width: 781px) {
   #playlist-wrapper {
     min-width: 680px;
   }
 }
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 780px) {
+  #player-wrapper {
+    margin-bottom: 5px;
+  }
+  #box-left,
+  #box-right {
+    width: 20px;
+  }
   #box-right {
     font-size: 1.5rem;
   }
@@ -196,16 +272,37 @@ footer {
   #playing-track {
     max-width: 220px;
     border-radius: 0px;
+    align-items: center;
+    text-align: center;
   }
-  #current-artist,
+  #playing-track div {
+    margin: 0px 5px;
+  }
   #current-title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+  #current-artist {
+    font-size: 1.3rem;
+  }
+  #current-line {
+    height: 0;
+    width: 0;
   }
   #current-album,
   #current-release {
     font-size: 1rem;
   }
+
+  #playlist-wrapper {
+    border-top: 8px solid rgb(66, 66, 66);
+  }
+  #song-wrapper {
+    max-height: 250px;
+  }
   .song {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  .song-component {
+    padding: 2px;
   }
 }

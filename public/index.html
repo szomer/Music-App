@@ -9,17 +9,22 @@
     <link href="/public/css/index.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
+    <!-- ART -->
+    <div id="art1"></div>
+    <div id="art2"></div>
+
     <main>
       <!-- PLAYER -->
       <div id="player-wrapper">
-        <div id="box-left">Box left</div>
+        <!-- BOX LEFT-->
+        <div id="box-left"></div>
 
         <!-- CURRENTLY PLAYING -->
         <div id="playing-wrapper">
           <!-- PLAYING BAR-->
           <div id="bar">
+            <!-- AUDIO PLAYER-->
             <div class="audio-player">
-              <!-- <div class="track-title">Facts</div> -->
               <div id="seekObjContainer">
                 <div id="timeline1">
                   <div
@@ -29,12 +34,13 @@
                   ></div>
                 </div>
               </div>
-              <!-- <small class="start-time"></small> -->
-              <!-- <div class="play-pause">play</div> -->
-              <!-- <small class="end-time"></small> -->
               <div class="audio-wrapper">
-                <audio id="player2" preload="auto">
-                  <source src="/public/tracks/track1.mp3" type="audio/mp3" />
+                <audio loop id="player2" preload="auto">
+                  <source
+                    id="audio-source"
+                    src="/public/tracks/track1.mp3"
+                    type="audio/mp3"
+                  />
                 </audio>
               </div>
             </div>
@@ -49,49 +55,33 @@
             </div>
             <!-- track info -->
             <div id="playing-track">
-              <div id="current-artist">Linkin Park</div>
-              <div id="current-title">One Step Closer</div>
-              <div id="current-album">Hybrid Theory (Bonus Edition)</div>
-              <div id="current-release">Released in 2000</div>
+              <div id="current-title">On & On</div>
+              <div id="current-artist">Cartoon & Daniel Levi</div>
+              <div id="current-line"></div>
+              <div id="current-album">Album: On & On</div>
+              <div id="current-release">Released in 2015</div>
             </div>
           </div>
         </div>
 
+        <!-- BOX RIGHT -->
         <div id="box-right"><label class="start-time">00:00</label></div>
       </div>
 
       <!-- PLAYLIST -->
       <div id="playlist-wrapper">
         <!-- SONGS -->
-        <div id="song-wrapper">
-          <div class="song">
-            <div class="song-component">Linkin Park - One Step Closer</div>
-            <div class="song-component">1:45</div>
-          </div>
-
-          <div class="song">
-            <div class="song-component">Linkin Park - Papercut</div>
-            <div class="song-component">2:27</div>
-          </div>
-
-          <div class="song">
-            <div class="song-component">Linkin Park - My December</div>
-            <div class="song-component">3:25</div>
-          </div>
-
-          <div class="song">
-            <div class="song-component">Linkin Park - In The End</div>
-            <div class="song-component">1:36</div>
-          </div>
-        </div>
+        <div id="song-wrapper"></div>
       </div>
     </main>
-    <footer>Footer Text</footer>
+
+    <footer>Music App - Suzanne Zomer</footer>
   </body>
 
   <script
     src="https://code.jquery.com/jquery-3.6.3.min.js"
     type="text/javascript"
   ></script>
-  <script src="/public/js/index.js" type="text/javascript"></script>
+  <script src="/public/js/songs.js" type="text/javascript"></script>
+  <script src="/public/js/player.js" type="text/javascript"></script>
 </html>

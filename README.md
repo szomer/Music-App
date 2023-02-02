@@ -1,5 +1,7 @@
 # Music App
 
+1 Feb 2023
+
 Front end web application - to listen to my premade playlist.
 
 - The purpose of developing this app is to improve my knowledge and practise on webdesign: working with concepts such as audio, dynamic web development (web/mobile), flexbox, etc.

@@ -4,10 +4,7 @@
 
 Front end web application - to listen to my premade playlist.
 
-- The purpose of developing this app is to improve my knowledge and practise on webdesign: working with concepts such as audio, responsive web development (web/mobile), flexbox, etc.
-
-- The music used, is copy right free and can be found at [NoCopyrightSounds](http://ncs.io). Sadly no Linkin Park :(
-
+- The music used, is copy right free and can be found at [NoCopyrightSounds](http://ncs.io).
 - JS library used: [jQuery](https://jquery.com).
 
 ---

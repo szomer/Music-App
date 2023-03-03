@@ -1,6 +1,6 @@
 # Music App
 
-Front end web application - to listen to my premade playlist.
+Front end web application - to listen to my premade playlist. To view click [HERE](https://szomer.github.io/Music-App/) (github pages).
 
 - The music used is copy right free and can be found at [NoCopyrightSounds](http://ncs.io).
 - Plain HTML, CSS, JS and [jQuery](https://jquery.com).

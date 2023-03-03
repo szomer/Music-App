@@ -49,7 +49,7 @@ Front end web application - to listen to my premade playlist.
   <img src="img/development2.JPG?raw=true" alt="Wireframe Mobile"/>
   <br>
   <i>Responsive App Development for Mobile</i>
-</p>
+git </p>
 
 ---
 

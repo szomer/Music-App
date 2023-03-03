@@ -1,12 +1,11 @@
 # Music App
 
+1 Feb 2023
+
 Front end web application - to listen to my premade playlist.
 
-- The purpose of developing this app is to improve my knowledge and practise on webdesign: working with concepts such as audio, dynamic web development (web/mobile), flexbox, etc.
-
-- The music used is copy right free and can be found at [NoCopyrightSounds]('http://ncs.io'). Sadly no Linkin Park :(
-
-- JS library used: [jQuery]('https://jquery.com')
+- The music used, is copy right free and can be found at [NoCopyrightSounds](http://ncs.io).
+- JS library used: [jQuery](https://jquery.com).
 
 ---
 
@@ -41,7 +40,7 @@ Front end web application - to listen to my premade playlist.
 <p align="center">
   <img src="img/development1.JPG?raw=true" alt="Development Web"/>
   <br>
-  <i>Dynamic App Development for Web</i>
+  <i>Responsive App Development for Web</i>
 </p>
 
 ---
@@ -49,7 +48,7 @@ Front end web application - to listen to my premade playlist.
 <p align="center">
   <img src="img/development2.JPG?raw=true" alt="Wireframe Mobile"/>
   <br>
-  <i>Dynamic App Development for Mobile</i>
+  <i>Responsive App Development for Mobile</i>
 </p>
 
 ---

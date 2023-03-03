@@ -12,7 +12,7 @@ Front end web application - to listen to my premade playlist.
 ## Application Screenshots
 
 <p align="center">
-  <img src="img/app2.JPG?raw=true" alt="App screenshot web"/>
+  <img src="images/app2.JPG?raw=true" alt="App screenshot web"/>
   <br>
   <i>App screenshot for desktop devices</i>
 </p>
@@ -20,7 +20,7 @@ Front end web application - to listen to my premade playlist.
 ---
 
 <p align="center">
-  <img src="img/app3.JPG?raw=true" alt="App screenshot tablet"/>
+  <img src="images/app3.JPG?raw=true" alt="App screenshot tablet"/>
   <br>
   <i>App screenshot for tablet devices</i>
 </p>
@@ -28,7 +28,7 @@ Front end web application - to listen to my premade playlist.
 ---
 
 <p align="center">
-  <img src="img/app4.JPG?raw=true" alt="App screenshot mobile"/>
+  <img src="images/app4.JPG?raw=true" alt="App screenshot mobile"/>
   <br>
   <i>App screenshot for mobile devices</i>
 </p>
@@ -38,7 +38,7 @@ Front end web application - to listen to my premade playlist.
 ## Development Progression Screenshots
 
 <p align="center">
-  <img src="img/development1.JPG?raw=true" alt="Development Web"/>
+  <img src="images/development1.JPG?raw=true" alt="Development Web"/>
   <br>
   <i>Responsive App Development for Web</i>
 </p>
@@ -46,7 +46,7 @@ Front end web application - to listen to my premade playlist.
 ---
 
 <p align="center">
-  <img src="img/development2.JPG?raw=true" alt="Wireframe Mobile"/>
+  <img src="images/development2.JPG?raw=true" alt="Wireframe Mobile"/>
   <br>
   <i>Responsive App Development for Mobile</i>
 git </p>
@@ -56,7 +56,7 @@ git </p>
 ## Wireframes
 
 <p align="center">
-  <img src="img/wireframe-web.JPG?raw=true" alt="Wireframe web"/>
+  <img src="images/wireframe-web.JPG?raw=true" alt="Wireframe web"/>
   <br>
   <i>Wireframe for Web</i>
 </p>
@@ -64,7 +64,7 @@ git </p>
 ---
 
 <p align="center">
-  <img src="img/wireframe-mobile.JPG?raw=true" alt="Wireframe mobile"/>
+  <img src="images/wireframe-mobile.JPG?raw=true" alt="Wireframe mobile"/>
   <br>
   <i>Wireframe for Mobile</i>
 </p>
